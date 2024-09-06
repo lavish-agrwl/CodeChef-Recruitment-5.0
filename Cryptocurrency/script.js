@@ -35,10 +35,28 @@ async function getCost(url) {
 
 getCost(apiURL);
 
+let menuCard = document.querySelector("div");
+
 let menu = Array.from(document.getElementsByClassName("menuButton"));
 menu.forEach(function (menu) {
   menu.addEventListener("click", function () {
-    let menuCard = document.querySelector("div");
     menuCard.classList.toggle("hidden");
+  });
+});
+
+let isDark = true;
+let contain = document.querySelector(".container");
+
+let dark = Array.from(document.getElementsByClassName("darkIcon"));
+dark.forEach(function (dark) {
+  dark.addEventListener("click", function () {
+    if (isDark) {
+      contain.style.background = `url("Images/light-bg.jpg")`;
+      menuCard.style.background = `rgb(102, 13, 15)`;
+    } else {
+      contain.style.background = `url("Images/background.jpg")`;
+      menuCard.style.background = `rgb(33, 13, 75)`;
+    }
+    isDark = !isDark;
   });
 });

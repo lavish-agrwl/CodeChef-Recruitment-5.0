@@ -11,15 +11,14 @@ body {
     background: rgb(15, 0, 43);
 
 }
-
 .menuCard {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: fit-content;
-    background: rgb(33, 13, 75);
+    /* background: rgb(33, 13, 75); */
     width: 100%;
-    position: fixed;
+    position: absolute;
     color: white;
     padding: 30px;
 }
@@ -33,10 +32,9 @@ body {
     display: none;
 }
 
-.menuCard img {
+/* .menuCard img {
     background-color: rgb(33, 13, 75);
-    ;
-}
+} */
 
 .icons {
     display: flex;
@@ -55,7 +53,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: url('Images/background.png');
     background-size: auto;
     color: white;
 }
@@ -103,6 +100,10 @@ nav ul li {
     }
 
     nav ul {
+        display: none;
+    }
+
+    nav .darkIcon {
         display: none;
     }
 }
