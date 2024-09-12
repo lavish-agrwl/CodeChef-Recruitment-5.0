@@ -54,7 +54,7 @@ dark.forEach(function (dark) {
       contain.style.background = `url("Images/light-bg.jpg")`;
       menuCard.style.background = `rgb(102, 13, 15)`;
     } else {
-      contain.style.background = `url("Images/background.jpg")`;
+      contain.style.background = `url("Images/background.png")`;
       menuCard.style.background = `rgb(33, 13, 75)`;
     }
     isDark = !isDark;
